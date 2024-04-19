@@ -42,7 +42,7 @@ public class GuessTheNumber {
 
             if (userGuess == randomNumber) {
                 System.out.println("Congratulations! You guessed the correct number in " + attempts + " attempts.");
-                return ATTEMPTS_LIMIT - attempts + 1; // Score is based on remaining attempts
+                return ATTEMPTS_LIMIT - attempts + 1; 
             } else if (userGuess < randomNumber) {
                 System.out.println("Too low! Try again.");
             } else {
@@ -52,6 +52,6 @@ public class GuessTheNumber {
 
         System.out.println("Sorry, you've run out of attempts. The correct number was: " + randomNumber);
         System.out.println("Thank you for playing!");
-        return 0; // Score is 0 if user couldn't guess the number
+        return 0; 
     }
 }
